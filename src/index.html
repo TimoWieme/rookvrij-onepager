@@ -6,31 +6,33 @@
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <title>Rookvrij Onepager</title>
   </head>
   <body class="overflow-x-hidden bg-gray-100">
-    <div class="text-center relative h-[100vh]">
-      <div class="absolute w-[120%] h-1/2 xl:h-[100vh] -left-40 -bottom-10 xl:-bottom-20">
-        <img src="images/vlammetje.svg" class="absolute w-[100%] h-full object-cover" />
-        <img src="images/firefighter.png" class="hidden xl:block absolute scale-[40%] lg:scale-[25%] xl:scale-[35%] -bottom-16 2xl:left-52 lg:left-16" />
-        <h1 class="text-4xl font-lato font-bold sm:text-3xl lg:text-4xl xl:text-6xl p-10 border-solid border-2 border-black absolute left-1/2 -translate-x-1/2 bottom-1/3"> Team Rookvrij </h1>
+    <div class="text-center relative h-full xl:h-[100vh] hidden xl:block">
+      <div class="absolute w-[120%] h-full xl:h-[100vh] -left-40 -bottom-10 xl:-bottom-20">
+        <img src="images/vlammetje.svg" class="hidden xl:block absolute w-[100%] h-full object-cover" />
+        <img src="images/firefighter.png" class="hidden xl:block absolute scale-[40%] xl:scale-[35%] -bottom-16 2xl:left-52" />
+        <h1 class="text-4xl font-lato font-bold hidden xl:block sm:text-3xl lg:text-4xl xl:text-6xl p-10 border-solid border-2 border-black absolute left-1/2 -translate-x-1/2 bottom-1/3"> Team Rookvrij </h1>
       </div>
     </div>
+    <div class="w-full block xl:hidden relative py-40">
+      <h1 class="text-4xl font-lato font-bold border-solid border-2 border-black absolute left-1/2 -translate-x-1/2"> Team Rookvrij </h1>
+    </div>
 
-    <div class="w-full h-full py-12">
+    <div class="w-full h-full py-12 px-12">
       <h2 class="text-3xl font-bold font-lato sm:text-4xl lg:text-5xl text-center"> Persona </h2>
-      <div class="w-1/2 mx-auto bg-red-500 mt-12">
+      <div class="w-full md:w-2/3 xl:w-1/2 mx-auto mt-12">
         <img src="images/Persona_v2.png" class="w-full h-full" />
       </div>
     </div>
 
     <div class="w-full h-full py-12">
-      <div class="mt-12 grid-parent px-24">
+      <div class="mt-12 grid-parent px-12 xl:px-24">
         <div class="grid-child-1"> <img src="images/persoon.png" alt=""> </div>
         <div class="grid-child-2 text-3xl font-bold font-lato sm:text-4xl lg:text-5xl flex items-center"> Gewenste situatie </div>
         <div class="grid-child-3">
-          <blockquote class="relative">
+          <blockquote class="relative mt-6 xl:mt-0">
             <div class="relative z-10">
               <p class="text-xl text-gray-800">
                 <em class="relative">
@@ -45,26 +47,26 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 grid-rows-2 gap-16 w-2/3 mx-auto mt-12">
-        <div class="w-full h-full flex flex-row gap-8 text-start items-center">
+      <div class="xl:grid grid-cols-2 grid-rows-2 gap-16 w-2/3 mx-auto mt-12 py-8 xl:py-0">
+        <div class="w-full h-full flex flex-row gap-8 text-start items-center mb-6 xl:mb-0">
           <img src="images/man_1.jpg" class="w-20 h-20 object-cover rounded-full" alt="" />
           <div class="border-solid border-2 p-2 w-full"> Een duidelijk overzicht van informatie bieden. </div>
         </div>
-        <div class="w-full h-full flex flex-row gap-8 items-center">
+        <div class="w-full h-full flex flex-row gap-8 items-center mb-6 xl:mb-0">
           <img src="images/vrouw_1.jpg" class="w-20 h-20 object-cover rounded-full" alt="" />
           <div class="border-solid border-2 p-2 w-full">Geruststellen van de doelgroep op verschillende vlakken. </div>
         </div>
-        <div class="w-full h-full flex flex-row gap-8 items-center">
+        <div class="w-full h-full flex flex-row gap-8 items-center mb-6 xl:mb-0">
           <img src="images/man_2.jpg" class="w-20 h-20 object-cover rounded-full" alt="" />
           <div class="border-solid border-2 p-2 w-full"> Ondersteuning bieden voor, tijdens of na een noodsituatie. </div>
         </div>
       </div>
     </div>
 
-    <div>
+    <div class="">
         <div class="text-3xl font-bold font-lato sm:text-4xl lg:text-5xl text-center mt-16">Concepten</div>
 
-        <div class="m-16 flex gap-24 justify-center">
+        <div class="m-16 flex flex-col xl:flex-row gap-24 justify-center items-center">
             <img src="images/concept/secureinsure.png">
             <div class="max-w-sm">
                 <h1 class="text-2xl font-bold font-lato lg:text-4xl m-8  bg-gradient-to-r from-blue-300 to-blue-0">SecureInsure</h1>
@@ -75,7 +77,8 @@
             </div>     
         </div>  
 
-        <div class="m-16 flex gap-24 justify-center">
+        <div class="m-16 flex flex-col xl:flex-row gap-24 justify-center items-center">
+          <img src="images/concept/caredrop.png" class="xl:order-2">  
             <div class="max-w-sm">
                 <h1 class="text-2xl font-bold font-lato lg:text-4xl m-8 bg-gradient-to-r from-blue-300 to-blue-0">CareDrop</h1>
                 <p class="text-xl font-lato">Een applicatie die slachtoffers van een calamiteit hulp kan bieden zoals huisvesting, kleding, financiële hulp en eten.</p>
@@ -84,10 +87,9 @@
                 <p class="text-xl font-lato mb-8">Hulp aanbieden bij een drop</p>
                 <p class="text-xl font-lato mb-8">Geruststellen van slachtoffers</p>
             </div>   
-            <img src="images/concept/caredrop.png" class="">  
         </div>
         
-        <div class="m-16 flex gap-24 justify-center">
+        <div class="m-16 flex flex-col xl:flex-row gap-24 justify-center items-center">
             <img src="images/concept/flamefinder.png">
             <div class="max-w-sm">
                 <h1 class="text-2xl font-bold font-lato lg:text-4xl m-8 bg-gradient-to-r from-blue-300 to-blue-0">FlameFinder</h1>
